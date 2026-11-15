@@ -1,5 +1,5 @@
 // Paste the deployed Cloudflare Worker URL here, without a trailing slash.
-const api = '';
+const api = 'advent.sqwiglyy.workers.dev';
 const doors = document.querySelector('#doors');
 const status = document.querySelector('#status');
 const dialog = document.querySelector('dialog');
