@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Meme Advent Calendar</title>
+<link rel="stylesheet" href="style.css">
+<script src="calendar.js" type="module"></script>
+</head>
+<body>
+<main>
+<header>
+<p class="eyebrow">✦ &nbsp; DECEMBER &nbsp; ✦</p>
+<h1>The Meme<br>Advent Calendar</h1>
+<p>One little laugh every day until Christmas.</p>
+</header>
+<p id="status" role="status"></p>
+<div id="doors" aria-label="Advent calendar doors"></div>
+<section aria-labelledby="feedback-title">
+<h2 id="feedback-title">Leave me a note</h2>
+<form id="feedback">
+<label>Message<textarea name="message" required maxlength="1000" rows="4" placeholder="Which one made you laugh?"></textarea></label>
+<label>Feedback code<input name="code" type="password" required maxlength="128" autocomplete="off"></label>
+<button class="send">Send message</button>
+<p id="feedback-status" role="status"></p>
+</form>
+</section>
+</main>
+<dialog aria-labelledby="video-title">
+<div class="modal-heading">
+<h2 id="video-title"></h2>
+<form method="dialog"><button aria-label="Close video">✕</button></form>
+</div>
+<p id="video-status" role="status"></p>
+<div id="player"></div>
+</dialog>
+</body>
+</html>

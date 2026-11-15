@@ -1,0 +1,33 @@
+:root{color-scheme:dark;font-family:system-ui,sans-serif;background:#102921;color:#fff5de}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at top,#254a3b,transparent 55%)}
+main{width:min(100% - 2rem,850px);margin:auto;padding:3rem 0}
+header{text-align:center;margin-bottom:2.5rem}
+.eyebrow{letter-spacing:.28em;color:#f0c77b;font-size:.83rem}
+h1,h2{font-family:Georgia,serif;font-weight:normal}
+h1{font-size:clamp(3rem,9vw,6rem);line-height:.94;letter-spacing:-.055em;margin:1rem 0}
+header p:last-child,#status{color:#d8e4d8;text-align:center}
+#doors{display:grid;grid-template-columns:repeat(6,1fr);gap:.65rem}
+button,input,textarea{font:inherit}
+button{cursor:pointer}
+.door{display:grid;place-content:center;gap:.2rem;aspect-ratio:1.05;border:1px solid #e8b86699;border-radius:10px;background:#8a323f;color:#fff5de;text-align:center}
+.door:nth-child(3n){background:#315a49}
+.door:nth-child(5n){background:#754a2c}
+.door:disabled{cursor:default;opacity:.68}
+.door:not(:disabled):hover{border-color:#fff5de;filter:brightness(1.15)}
+.door strong{font:clamp(1.45rem,4vw,2.75rem) Georgia,serif}
+.door small{font-size:.65rem}
+section,dialog{border:1px solid #e8b86666;border-radius:14px;background:#19372c;color:inherit;padding:1.5rem}
+section{max-width:32rem;margin:2.5rem auto 0}
+h2{margin:0 0 1rem;font-size:1.8rem}
+label,input,textarea{display:block;width:100%}
+label{margin:0 0 .9rem}
+input,textarea{background:#102921;color:inherit;border:1px solid #8ca697;border-radius:6px;padding:.7rem;margin-top:.35rem}
+.send,.modal-heading button{background:#f0c77b;color:#102921;border:0;border-radius:6px;padding:.6rem .9rem}
+#feedback-status:empty,#video-status:empty{display:none}
+dialog{width:min(92vw,730px)}
+dialog::backdrop{background:#081710de}
+.modal-heading{display:flex;justify-content:space-between;align-items:start;gap:1rem}
+iframe{display:block;width:100%;aspect-ratio:16/9;border:0}
+a{color:#f0c77b}
+@media(max-width:550px){#doors{grid-template-columns:repeat(4,1fr)}main{padding-top:2rem}}
