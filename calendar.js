@@ -27,7 +27,7 @@ async function openDoor(day) {
     const { id } = await call('/door/' + day, { signal: controller.signal });
     if (controller.signal.aborted) return;
     const video = document.createElement('iframe');
-    video.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1';
+    video.src = 'https://www.youtube-nocookie.com/embed/' + id;
     video.title = 'Meme for December ' + day;
     video.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
     video.allowFullscreen = true;
